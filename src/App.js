@@ -1,50 +1,126 @@
 import './App.css';
+import React from 'react';
+import './index.js';
 /* inicio*/
+
+function slider() {
+
+let imgSlider = document.querySelectorAll('.slider-container .slider-box');
+let btnProx = document.querySelector('#proxima');
+let btnAnter = document.querySelector('#anterior');
+let btnNav = document.querySelectorAll('.btn-nav .btn-nav');
+
+let contadorImg = imgSlider.length;
+let imgAtiva = 0;
+
+btnProx.addEventListener('click', () => {
+  imgAtiva++;
+});
+
+
+}
+
+/* aplicação Main */
 function App() {
-  return (
-    <div className="App">
-      <header className="main">
-        <div className="center">
+	return (
 
-          
-            <div className="logo">
-              <img src="logo.png" className="App-logo" alt="logo" />
-            </div>
-            <nav className='navegation'>
-            <div>  
-              <ul className="options"  >
-        
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#service">ABOUT</a></li>
-                <li><a href="#home">SERVICES</a></li>
-                <li><a href="#service">PAGES</a></li>
-                <li><a href="#service">BLOG</a></li>
-                <li><a href="#home">CONTACT</a></li>
-             
-              </ul>
-            </div>
-            <div className="header-btn">
-              <a href='#'>MAKE APPONTAMENT </a>
-            </div>
-          </nav>
+		
+		<div className="App">
+			<header className="main">
+				<div className="center">
 
-        </div>
-      </header>
-      <section className='hero'>
 
-        <div className="hero-content">
-          <img className='img-hero' src='barbearia.jpg' alt="Imagem de uma barbearia" />
-        </div>
-        <div className="hero-text">
-          <h1>Welcome to Trendy Salon & Spa</h1>
-          <p>Your Style, Our Passion</p>
-          <a href="#service" className="header-btn">MAKE APPONTAMENT</a>
-        </div>
-      </section>
-      <div className='center'>
-        <a href='#service' className="header-btn">MAKE APPONTAMENT</a>
-      </div>
+					<div className="logo">
+						<img src="logo.png" className="App-logo" alt="logo" />
+					</div>
+					<nav className='navegation'>s
+						<div>
+							<ul className="options"  >
 
+								<li><a href="#home">HOME</a></li>
+								<li><a href="#service">ABOUT</a></li>
+								<li><a href="#home">SERVICES</a></li>
+								<li><a href="#service">PAGES</a></li>
+								<li><a href="#service">BLOG</a></li>
+								<li><a href="#home">CONTACT</a></li>
+
+							</ul>
+						</div>
+						<div className="header-btn">
+							<a href='#'>MAKE APPONTAMENT </a>
+
+						</div>
+					</nav>
+
+				</div>
+			</header>
+
+			<section className='slider'>
+
+				<div className='interface'>
+
+					<div className="slider-container">
+
+						<div className='slider-box '>
+							<img src='barbearia.jpg' alt='Imagem de uma barbearia' />
+							<div className='texto-slider'>
+								<h2>Trendy Salon & Spa 1 </h2>
+								<p>Your Style, Our Passion</p>
+							</div>
+						</div>
+
+						<div className='slider-box ativo'>
+							<img src='barbearia2.jpg' alt='Imagem de uma barbearia' />
+							<div className='texto-slider'>
+								<h2>Trendy Salon & Spa 2</h2>
+								<p>Your Style, Our Passion</p>
+							</div>
+						</div>
+
+						<div className='slider-box'>
+							<img src='barbearia3.png' alt='Imagem de uma barbearia' />
+							<div className='texto-slider'>
+								<h2>Trendy Salon & Spa 4</h2>
+								<p>Your Style, Our Passion</p>
+							</div>
+						</div>
+
+
+					</div>
+
+					{/* aprendeno a fazer setas  */}
+					<div className='setas'>
+						<button id='btn-voltar'><i class="bi bi-caret-left-fill"></i>  </button>
+						<button id='btn-avancar'><i class="bi bi-caret-right-fill"></i></button>
+					</div>
+
+					<div className='btn-nav-box'>
+						
+				    </div>	
+				</div>
+
+
+			</section >
+
+
+
+			<div className='overlay'></div>
+
+			<section className='hero'>
+				<div className="hero-content">
+					<img className='img-hero' src='barbearia3.jpg' alt="Imagem de uma barbearia" />
+				</div>
+				<div className="hero-text">
+					<h1>Welcome to Trendy Salon & Spa</h1>
+					<p>Your Style, Our Passion</p>
+					<a href="#service" className="header-btn">MAKE APPONTAMENT</a>
+				</div>
+			</section>
+			<div className='center'>
+				<a href='#service' className="header-btn">MAKE APPONTAMENT</a>
+			</div>
+
+			{/* seção de barbeiros  
       <section id="team" className="team_section bd-bottom padding">
       <div className="container">
         <div
@@ -104,9 +180,9 @@ function App() {
         </ul>
       </div>
     </section>
-
-    </div>
-  );
+*/}
+		</div >
+	);
 }
 
 export default App;
