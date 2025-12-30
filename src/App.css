@@ -355,14 +355,56 @@ a{
   z-index: 4;
 }
 
+/*responsividade do site*/
+@media (max-width: 1150px) {
+   .about01{
+  position: relative;
+  width: 10%;
+  height: 10%;
+  left: 30px;
+  
+  z-index: 2;
+}
+.about02{
+  position: relative;
+  width: 20%;
+  height: 20%;
+  top: 60px;
+  right: 60px;
+  z-index: 3;
+}
+.about03{
+  position: relative;
+  bottom: 30px;
+  left: 60px;
+  z-index: 4;
+}
+
+}
+
+@media (max-width: 720px) {
+.about01{
+  display: none;
+}
+.about02{
+  display: none;
+}
+.about03{
+  display: none;
+}
+}
+
+
 /* hero */
+/*deixar o site responsivo na parte  do hero*/
 
 .hero{
   width: 100%;
   height: 70vh;
   background-color: #F7F2EF ;
-  margin-top: 35%;
+  margin-top: 15%;
   border: #000;
+  
 }
 .hero-content{
   
@@ -370,25 +412,63 @@ a{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+ 
   padding: 50px 20px 0px 20px;
 }
 .hero-box{
   background-color: #FFFFFF;
   margin: 30px;
-  padding: 40px;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Prata', serif;
+  
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-radius: 2px;
+  
 }
-.bs-scissors-1:before {
+.bi-scissors {
+  width: 4rem;
+  height: 4rem ;
+  align-items: center;
+}
+
+
+.bs-scissors:before {
     content: "\e92b";
+    
 }
 
 .hero-text{
-  display: flex;
-  flex-wrap: 2, wrap;
-  
-  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 2 colunas */
+  gap: 2px;
+
+  margin:0 auto;
+  padding: 10px;
+  margin: 30px;
+  max-width: 92% ;
  
-  max-width: 95% ;
-  justify-content: space-between;
+  align-items: center;
+  margin-left: 4%;
+  justify-content: center;
+  
+}
+@media (max-width: 1150px) {
+  .hero-text {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero{
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-text {
+    grid-template-columns: 1fr;
+  }
+  .hero{
+    margin-top: 50%;
+  }
 }
 .img-hero{
   width: 100%;
@@ -399,7 +479,15 @@ a{
 
 }
 
+/* Appontament Forms*/
+.Appontament{
+  
+}
 
+.Formulario{
+ display: flex;
+
+}
 /* services */
 
 .services-section{
