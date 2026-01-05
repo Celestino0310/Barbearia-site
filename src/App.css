@@ -58,6 +58,33 @@ root {
   
 }
 
+/* barra lateral css*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 22px;
+}
+
+/* fundo da barra */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #9e8a78;
+}
+
+::selection {
+    background-color: #9e8a78;
+    color: #fff
+}
+
+-webkit-::selection {
+    background-color: #9e8a78;
+    color: #fff
+}
+/*header css*/
 header {
   width: 100%;
   height: 80px;
@@ -181,9 +208,10 @@ a{
   }
   0%{
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(13px);
   }
 }
+.slider .slider-box.ativo a,
 .slider .slider-box.ativo h2,
 .slider .slider-box.ativo  p{
   animation: animarTexto 2s ease-in-out forwards;
@@ -221,6 +249,42 @@ a{
   border-radius: 30%;
   cursor: pointer;
 }
+.btn-s {
+  position: relative;
+  top: 20px;
+  right: 12px;
+  background-color: #9D8977;
+  max-width: 200px;
+  color: white;
+  margin: 10px ;
+  padding: 10px 5px;
+  cursor:pointer;
+  border-radius: 1px;
+  overflow: hidden;
+  z-index: 1;
+ 
+}
+
+/* fundo animado */
+.btn-s::before {
+  content: '';
+  inset: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  z-index: -1;
+}
+
+/* hover */
+.btn-s:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+
+
 /* Banner */
 .banner{
   display: flex;
@@ -480,13 +544,88 @@ a{
 }
 
 /* Appontament Forms*/
-.Appontament{
-  
+
+option {
+  background-color: #1f1f1f;
+  color: white;
+}
+select {
+  background-color: #1f1f1f;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 14px;
+}
+select:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #c7a17a;
 }
 
-.Formulario{
- display: flex;
+.Appontament{
+  display: flex;
+  min-height: 600px;
+  margin-top: -1%;
+}
 
+.Div-Apponntament{
+ flex: 1;
+
+}
+
+.Img-Appontament{
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+}
+/*  formulários css */
+.Formulario{
+  flex: 1;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 70px 150px 70px 120px;
+
+}
+.Formulario p{
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  margin: 30px
+}
+.Formulario h2{
+  font-size: 32px;
+  font-family: 'Prata' ,serif;
+  margin: 30px;
+}
+.Formulario form{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap:20px;
+ margin: 30px;
+}
+
+.Formulario input,
+.Formulario select {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 14px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.Formulario input::placeholder{
+  color: rgba(255,255,255,0.6);
+}
+.Formulario button {
+  grid-column: span 2;
+  background: #c7a17a;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Formulario button:hover {
+  background: #b08b63;
 }
 /* services */
 
@@ -502,20 +641,89 @@ a{
 
 
 /* team */
+.container{
+  display: flex ;
+  justify-content: center;
+ 
+}
+
 .team_members  {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   margin: 10px;
-  padding: 20px 0;
+  padding: 30px 50px ;
   list-style: none;
+  
 }
 
 .img-barber{
-  border-radius: 2%;
+  width: 265px;
+  height: 270px;
+
+}
+
+.team_member {
+  position: relative;      /* referência pro overlay */
+  overflow: hidden;
+}
+
+.team_member img {
+  width: 100%;
+  display: block;
+
+}
+
+/* OVERLAY ESCONDIDO */
+.team_member .overlay {
+  position: absolute;
+  inset: 0;                /* top, right, bottom, left = 0 */
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;              /* escondido */
+  transition: 0.4s ease;
+}
+
+/* 🔥 QUANDO PASSA O MOUSE */
+.team_member:hover .overlay {
+  opacity: 1;
+  filter: grayscale(100%);
+}
+.overlay {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.4s ease;
+}
+
+.team_member:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* PRICE */
+.price{
+  background-color: #F7F2EF;
+  font-family: "Prata", serif;
+}
+
+.price-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
  
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+}
+.price-text{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin:0 50px ;
+   
 }
