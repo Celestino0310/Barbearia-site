@@ -1,12 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+/* resetando o site */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   
 }
-
+html, body {
+  overflow-x: hidden;
+}
 root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -58,6 +61,40 @@ root {
   
 }
 
+h3{
+    font-size: 17px;
+}
+h4{
+    font-size: 15px;
+}
+h5,h6{
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+img{
+    border: none;
+    outline:none;
+}
+ul{
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p, li, a, span{}
+
+span.price {}
+p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+a, a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: 0;
+    text-decoration: none;
+}
 /* barra lateral css*/
 ::-webkit-scrollbar {
   width: 8px;
@@ -286,12 +323,13 @@ a{
 
 
 /* Banner */
+
 .banner{
   display: flex;
   width: 95%;
   height: 50vh;
   margin-top: 8%;
-
+ 
 }
 .banner-content{
   
@@ -307,6 +345,8 @@ a{
   position: relative;
   left: 62px;
   min-width: none;
+  
+  animation: animarTexto 2s ease-in-out forwards;
 }
 .banner-content img{
   width: 0 auto;
@@ -476,8 +516,19 @@ a{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
- 
+  
   padding: 50px 20px 0px 20px;
+}
+.hero-content h2{
+  font-size: 36px;
+  font-family: 'Prata',serif;
+  color: #303133;
+}
+.hero-content h3{
+  font-size: 17px;
+  font-family: 'Prata',serif;
+  color: #9E8A78;
+ 
 }
 .hero-box{
   background-color: #FFFFFF;
@@ -485,7 +536,7 @@ a{
   padding: 30px;
   text-align: center;
   font-family: 'Prata', serif;
-  
+  animation: animarTexto 2s ease-in-out forwards;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   border-radius: 2px;
   
@@ -641,10 +692,14 @@ select:focus {
 
 
 /* team */
+.services_section{
+  background-color: #FFFFFF;
+}
 .container{
   display: flex ;
   justify-content: center;
- 
+  padding: 30px;
+   background-color: #FFFFFF;
 }
 
 .team_members  {
@@ -654,6 +709,7 @@ select:focus {
   margin: 10px;
   padding: 30px 50px ;
   list-style: none;
+  animation: animarTexto 2s ease-in-out forwards;
   
 }
 
@@ -690,7 +746,7 @@ select:focus {
   transition: 0.4s ease;
 }
 
-/* 🔥 QUANDO PASSA O MOUSE */
+/*  QUANDO PASSA O MOUSE */
 .team_member:hover .overlay {
   opacity: 1;
   filter: grayscale(100%);
@@ -708,22 +764,261 @@ select:focus {
 
 
 /* PRICE */
-.price{
-  background-color: #F7F2EF;
-  font-family: "Prata", serif;
-}
 
+.price{
+   /*background-color: #FCF9F5;*/
+   background-color: #F7F2EF ;
+}
 .price-content{
+  
+  font-family: 'Lato' ,sans-serif;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
- 
+ margin: -50px 210px 50px 210px ;
+  gap: 40px;
+  padding: 80px;
+  align-items: center;
 }
-.price-text{
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin:0 50px ;
+.price-line {
+  display: flex;
+  align-items: center;
+}
+.price-text h3{
+   font-family: 'Prata',serif;
+   font-size: 17px;
+   background-color: #9e8a78;
+   color:#FFFFFF ;
+   width: 40%;
+   align-items: center;
+   white-space: nowrap;
+   padding: 10px;
+}
+.price-line h4 {
+  font-family: 'Prata', serif;
+  font-size: 18px;
+  color: #333333;
+  margin: 0;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.price-line .line {
+  flex: 1;
+  border-bottom: 1px dashed #bbb;
+  margin: 0 10px;
+}
+
+.price-line .price {
+  font-family: 'Prata',serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #a58d7f;
+  white-space: nowrap;
+}
+.price-item{
+  margin:20px 0 0 0 ;
+}
+.price-item p{
+  font-family: 'Lato',serif;
+  color: #777777;
+  font-size: 16px;
+}
+
+
+
+/* ==========================================================================
+   1.0 imagem background Section
+   ========================================================================== */
    
+.Sec-img{
+  background-image: url(/public/barbearia.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center ;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  
+}   
+
+.section-img{
+  display: flex;
+  
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  text-shadow: #000;
+}
+.division-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+.division-img h2{
+  font-family: 'Prata',serif;
+  font-size: 42px;
+  color: #FFFFFF;
+}
+.division-img p{
+  font-size: 16px;
+  font-family: 'Lato', serif;
+   color: #FFFFFF;
+   font-weight: 700;
+}
+
+
+
+/* ==========================================================================
+   13. BLOG Section
+   ========================================================================== */
+
+
+.Blog-section{
+    width:100%;
+    height: 100%;
+    background-color: #F6F6F6;
+}   
+.Blog{
+    background-color: #F6F6F6;
+    
+    padding: 150px 200px 150px 200px;
+  } 
+
+.Blog-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+ .Blog-title h2{
+     
+   font-family:'Prata',serif ;
+   font-size:36px ;
+   color: #303133;
+   font-weight: 400;
+ } 
+ .Blog-title h3{
+
+    font-family:'Prata',serif ;
+   font-size:17px ;
+   color: #303133;
+   font-weight: 400;
+ } 
+.Blog-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+    justify-content: space-between;
+
+  }
+.Blog-items{
+    display: flex;
+    flex-direction: column;
+   padding: 30px;
+    
+}
+.Blog-text{
+   padding: 30px;
+   background-color: #FFFFFF;
+}
+.Blog-text h2{
+  font-family:'Prata',serif ;
+   font-size:18px ;
+   margin-bottom: 15px;
+}
+
+.Blog-text p{
+  font-family: 'Lato',serif;
+  font-size: 16px;
+}
+
+.Blog-text-indication{
+  position: relative;
+  font-family: 'Work Sans',sans-serif;
+  bottom:62px; 
+  right: 30px;
+  font-family: 'Lato',serif;
+  font-size: 12px;
+  background-color: #9E8A78;
+  color:#FFFFFF;
+  padding: 8px 15px;
+}
+.Img-Blog{
+  width: 100%;
+  height: auto  ;
+
+}
+
+Scroll {
+  width: 100%;
+  overflow: hidden;
+}
+
+.Scroll-container {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+   overflow: hidden;
+  animation: scrollInfinito 18s linear infinite;
+}
+
+.Scroll-item {
+  flex: 0 0 auto;
+  padding: 30px 20px;
+  white-space: nowrap;
+  
+}
+
+@keyframes scrollInfinito {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ==========================================================================
+   14.0 Footer Section
+   ========================================================================== */
+.footer_section{
+    display: block;
+    background-color: #222227;
+    border-top: 1px solid #333;
+    padding: 30px 0;
+}
+.footer_section .copyright{
+    font-size: 14px;
+    color: #ddd;
+}
+.footer_social{
+    display: block;
+    text-align: right;
+}
+.footer_social li{
+    display: inline-block;
+}
+.footer_social li a{
+    font-family: "Work Sans",sans-serif;
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.footer_social li a:hover{
+    color: #9e8a78;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #343a40;
+}
+footer a{
+  position: relative;
+  margin:20px;
+  right: 100px;
 }

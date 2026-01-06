@@ -69,7 +69,7 @@ function App() {
 									<p>Your Style, Our Passion</p>
 
 
-							
+
 									<a href="#Appontament" className='btn-s'> MAKE APPONTAMENT </a>
 								</div>
 							</div>
@@ -255,45 +255,147 @@ function App() {
 				</div>
 
 				<div className="price-content">
-					<div className='price-text'>
-						<h3> opa  </h3>
-						<br></br>
-						<h3> opa ----------------------------- $8</h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4><h3> </h3>
-						
-						<h3> opa ----------------------------- $8</h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4>
 
-						<h3> opa ----------------------------- $8 </h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4>
-					
+					<div className='price-text'>
+
+						<h3> Hair Styling </h3>
+						<ul>
+
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
+
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
+
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
+
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+
+						</ul>
 					</div>
-
 					<div className='price-text'>
-						<h3> opa</h3>
-						<br></br>
-						<h3> opa ----------------------------- $8</h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4><h3> </h3>
 
-						<h3> opa ----------------------------- $8 </h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4>
+						<h3> Shaving </h3>
+						<ul>
 
-						<h3> opa ----------------------------- $8</h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4>
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
 
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
+
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
+
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+
+						</ul>
 					</div>
-
 					<div className='price-text'>
-						<h3> opa</h3>
-						<br></br>
-						<h3> opa ----------------------------- $8</h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4><h3> </h3>
 
-						<h3>opa ----------------------------- $8</h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4>
+						<h3>Face Masking</h3>
+						<ul>
 
-						<h3> Opa ----------------------------- $8</h3>
-						<h4>Barber is a person whose occupation is mainly to cut dress groom style and shave men.</h4>
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
+
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
+
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+							<li className="price-item">
+								<div className="price-line">
+									<h4>Hair Cut</h4>
+
+									<span className="line"></span>
+
+									<span className="price">$8</span>
+								</div>
+
+								<p>
+									Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+								</p>
+							</li>
+
+						</ul>
 					</div>
 
 
@@ -301,8 +403,122 @@ function App() {
 				</div>
 
 			</section>
+			<section className='Sec-img'>
+				<div className='section-img'>
+					<div className='division-img'>
+						<h2>Making You Look Good <br></br>Is In Our Haritage</h2>
+						<p>Barber is a person whose occupation is mainly to cut dress groom
+							style and shave men's and boys hair.</p>
+						<div>
+							<a href="#Appontament" className='btn-s'> MAKE APPONTAMENT </a>
+						</div>
+					</div>
+
+				</div>
 
 
+			</section>
+			<section className='Blog-section'>
+				<div className='Blog'>
+					<div className='Blog-title'>
+						<h3> From Blog</h3>
+						<h2>A Good Newspaper Is A<br></br>
+							Nation Talking To Itself </h2>
+					</div>
+					<div className='Blog-container'>
+
+						<div className='Blog-item'>
+
+							<img
+								className="Img-Blog"
+								src="post-1.jpg"
+								alt="Barbearia" />
+
+							<div className='Blog-text'>
+								< a className='Blog-text-indication'> INTERIOR </a>
+								<h2>
+									Minimalist trending in modern architecture 2019
+								</h2>
+								<p>
+									Building first evolved out dynamics between needs means available building materials attendant skills.
+								</p>
+								<a> read more </a>
+							</div>
+						</div>
+						<div className='Blog-item'>
+
+							<img
+								className="Img-Blog"
+								src="post-2.jpg"
+								alt="Barbearia" />
+
+							<div className='Blog-text'>
+								< a className='Blog-text-indication'> ARCHITETURE </a>
+								<h2>
+									Terrace in the town yamazaki kentaro design workshop.
+								</h2>
+								<p>
+									Building first evolved out dynamics between needs means available building materials attendant skills.
+								</p>
+								<a> read more </a>
+							</div>
+						</div>
+						<div className='Blog-item'>
+
+							<img
+								className="Img-Blog"
+								src="post-3.jpg"
+								alt="Barbearia" />
+
+							<div className='Blog-text'>
+								< a className='Blog-text-indication'> DESIGN </a>
+								<h2>
+									W270 house são paulo arquitetos fabio jorge architeqture.
+								</h2>
+								<p>
+									Building first evolved out dynamics between needs means available building materials attendant skills.
+								</p>
+								<a> read more </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className='Scroll'> 
+				 <div className='Scroll-container'>
+					<div className='Scroll-item'> <img src='sponsor-1.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-2.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-3.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-4.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-5.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-1.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-2.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-3.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-4.png' alt='imagem'/> </div>
+					<div className='Scroll-item'> <img src='sponsor-5.png' alt='imagem'/> </div>
+				 </div>	
+			</section>	
+
+			<section>
+				<div>
+					
+					<div>
+                       
+					   	<div>
+
+						</div>
+					   	<div>
+
+						</div>
+					   	<div>
+
+						</div>
+					   	<div>
+
+						</div>
+					</div>
+				</div>
+			</section>					
 			{/* Footer Section */}
 			<footer>
 				<p> &copy; 2026 Trendy Salon & Spa. All Rights Reserved.</p>
