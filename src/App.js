@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useRef, useState } from 'react';
 import './index.js';
+import { getActiveElement } from '@testing-library/user-event/dist/utils/index.js';
 
 /* inicio*/
 
@@ -9,8 +10,8 @@ function App() {
 	const [imgAtiva, setImgAtiva] = useState(1); // Começa com a imagem 2 ativa, pois no seu código a imagem 2 já está com a classe 'ativo'.
 
 	const imagens = [
-		{ src: 'about-1.jpg', alt: 'Our hair style enhances your smile' },
-		{ src: 'barbearia2.jpg', alt: 'Lorem ipsum dolor sit amet ' },
+		{ src: 'about-2.jpg', alt: 'Our hair style enhances your smile' },
+		{ src: 'about-1.jpg', alt: 'Lorem ipsum dolor sit amet ' },
 		{ src: 'barbearia3.png', alt: 'lorem ipsum dolor sit amet sit alert' }
 	];
 
@@ -22,9 +23,30 @@ function App() {
 	const voltar = () => {
 		setImgAtiva((prev) => (prev - 1 + imagens.length) % imagens.length);
 	};
+
+
+
 	//de
+	document.addEventListener('DOMContentLoaded', function () {
+		document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
 
+				const targetId = this.getAttribute('href').substring(1);
+				const targetElement = document.getElementById(targetId);
 
+				// Adiciona um pequeno delay antes de fazer o scroll suave
+				setTimeout(function () {
+					if (targetElement) {
+						window.scrollTo({
+							top: targetElement.offsetTop,
+							behavior: 'smooth'
+						});
+					}
+				}, 100); // Delay de 100 milissegundos
+			});
+		});
+	});
 	return (
 
 
@@ -177,7 +199,7 @@ function App() {
 							<option value="martin-lane">Martin Lane</option>
 						</select>
 
-						<button type="submit">MAKE APPOINTMENT</button>
+						<button type="submit">SUBMIT APPOINTMENT</button>
 					</form>
 
 
@@ -189,7 +211,7 @@ function App() {
 			<section id="service" className="services_section">
 				<div className="hero-content">
 					<h3>Trendy Salon & Spa </h3>
-					<h2> Our Services </h2>
+					<h2> Our Barbers </h2>
 					<div class="heading-line">
 						<img src='heading-line.png'></img>
 					</div>
@@ -276,11 +298,11 @@ function App() {
 							</li>
 							<li className="price-item">
 								<div className="price-line">
-									<h4>Hair Cut</h4>
+									<h4>Hair Styling</h4>
 
 									<span className="line"></span>
 
-									<span className="price">$8</span>
+									<span className="price">$9</span>
 								</div>
 
 								<p>
@@ -289,11 +311,11 @@ function App() {
 							</li>
 							<li className="price-item">
 								<div className="price-line">
-									<h4>Hair Cut</h4>
+									<h4>Hair Triming</h4>
 
 									<span className="line"></span>
 
-									<span className="price">$8</span>
+									<span className="price">$10</span>
 								</div>
 
 								<p>
@@ -310,7 +332,7 @@ function App() {
 
 							<li className="price-item">
 								<div className="price-line">
-									<h4>Hair Cut</h4>
+									<h4>Clean Shaving</h4>
 
 									<span className="line"></span>
 
@@ -323,11 +345,11 @@ function App() {
 							</li>
 							<li className="price-item">
 								<div className="price-line">
-									<h4>Hair Cut</h4>
+									<h4>Beard Triming</h4>
 
 									<span className="line"></span>
 
-									<span className="price">$8</span>
+									<span className="price">$9</span>
 								</div>
 
 								<p>
@@ -336,11 +358,11 @@ function App() {
 							</li>
 							<li className="price-item">
 								<div className="price-line">
-									<h4>Hair Cut</h4>
+									<h4>Smooth Shave</h4>
 
 									<span className="line"></span>
 
-									<span className="price">$8</span>
+									<span className="price">$10</span>
 								</div>
 
 								<p>
@@ -357,7 +379,7 @@ function App() {
 
 							<li className="price-item">
 								<div className="price-line">
-									<h4>Hair Cut</h4>
+									<h4>White Facial</h4>
 
 									<span className="line"></span>
 
@@ -370,11 +392,11 @@ function App() {
 							</li>
 							<li className="price-item">
 								<div className="price-line">
-									<h4>Hair Cut</h4>
+									<h4>Face Cleaning</h4>
 
 									<span className="line"></span>
 
-									<span className="price">$8</span>
+									<span className="price">$10</span>
 								</div>
 
 								<p>
@@ -383,11 +405,11 @@ function App() {
 							</li>
 							<li className="price-item">
 								<div className="price-line">
-									<h4>Hair Cut</h4>
+									<h4>Bright Tuning</h4>
 
 									<span className="line"></span>
 
-									<span className="price">$8</span>
+									<span className="price">$12</span>
 								</div>
 
 								<p>
@@ -484,41 +506,93 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className='Scroll'> 
-				 <div className='Scroll-container'>
-					<div className='Scroll-item'> <img src='sponsor-1.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-2.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-3.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-4.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-5.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-1.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-2.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-3.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-4.png' alt='imagem'/> </div>
-					<div className='Scroll-item'> <img src='sponsor-5.png' alt='imagem'/> </div>
-				 </div>	
-			</section>	
-
-			<section>
-				<div>
-					
-					<div>
-                       
-					   	<div>
-
-						</div>
-					   	<div>
-
-						</div>
-					   	<div>
-
-						</div>
-					   	<div>
-
-						</div>
-					</div>
+			<section className='Scroll'>
+				<div className='Scroll-container'>
+					<div className='Scroll-item'> <img src='sponsor-1.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-2.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-3.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-4.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-5.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-1.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-2.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-3.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-4.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src='sponsor-5.png' alt='imagem' /> </div>
 				</div>
-			</section>					
+			</section>
+			<section className="section-widget">
+				<div className="Div-container">
+
+					{/* BLOCO 1 — Logo + texto + redes */}
+					<div className="Div-container-spaces">
+						<img className='logo-foot' src="logo.png" alt="Logo" />
+
+						<p>
+							Our barbershop is the created for men who appreciate premium quality,
+							time and flawless look.
+						</p>
+
+						<ul className="ul-icons">
+							<li className="icons">
+								<i className="fab fa-facebook"></i>
+							</li>
+
+							<li className="icons">
+								<i className="fab fa-twitter"></i>
+							</li>
+
+							<li className="icons">
+								<i className="fab fa-google"></i>
+							</li>
+
+							<li className="icons">
+								<i className="fab fa-instagram"></i>
+							</li>
+
+							<li className="icons">
+								<i className="fab fa-linkedin"></i>
+							</li>
+						</ul>
+					</div>
+
+					{/* BLOCO 2 — Endereço */}
+					<div className="Div-container-spaces">
+						<h3>Headquarters</h3>
+
+						<p>
+							962 Fifth Avenue, 3rd Floor <br />
+							New York, NY 10022
+						</p>
+
+						<p>
+							Hello@dynamiclayers.net <br />
+							(+123) 456 789 101
+						</p>
+					</div>
+
+					{/* BLOCO 3 — Horários */}
+					<div className="Div-container-spaces">
+						<h3>Opening Hours</h3>
+
+						<ul>
+							<li>Monday - Friday: 11:30am - 8:00pm</li>
+							<li>Saturday: 9am - 8pm</li>
+							<li>Monday - Friday: 5:30am - 11:00pm</li>
+							<li>Saturday - Sunday: 4:30am - 1:00pm</li>
+						</ul>
+					</div>
+
+					{/* BLOCO 4 — Newsletter */}
+					<div className="Div-container-spaces">
+						<h3>Subscribe to our contents</h3>
+
+						<input placeholder="Email adress..." />
+						<button className="footer-btn" type="submit">SUBSCRIBE</button>
+					</div>
+
+				</div>
+			</section>
+         
 			{/* Footer Section */}
 			<footer>
 				<p> &copy; 2026 Trendy Salon & Spa. All Rights Reserved.</p>
