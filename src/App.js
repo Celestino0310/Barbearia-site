@@ -7,12 +7,12 @@ import { getActiveElement } from '@testing-library/user-event/dist/utils/index.j
 
 /* aplicação Main */
 function App() {
-	const [imgAtiva, setImgAtiva] = useState(1); // Começa com a imagem 2 ativa, pois no seu código a imagem 2 já está com a classe 'ativo'.
+	const [imgAtiva, setImgAtiva] = useState(1);
 
 	const imagens = [
-		{ src: 'about-2.jpg', alt: 'Our hair style enhances your smile' },
-		{ src: 'about-1.jpg', alt: 'Lorem ipsum dolor sit amet ' },
-		{ src: 'barbearia3.png', alt: 'lorem ipsum dolor sit amet sit alert' }
+		{ src: '/Images/about-2.jpg', alt: 'Our hair style enhances your smile' },
+		{ src: '/Images/about-1.jpg', alt: 'Lorem ipsum dolor sit amet ' },
+		{ src: '/Images/barbearia3.png', alt: 'lorem ipsum dolor sit amet sit alert' }
 	];
 
 
@@ -56,7 +56,7 @@ function App() {
 
 
 					<div className="logo">
-						<img src="logo.png" className="App-logo" alt="logo" />
+						<img src={`${process.env.PUBLIC_URL}/Images/logo.png`} className="App-logo" alt="logo" />
 					</div>
 					<nav className='navegation'>s
 						<div>
@@ -85,7 +85,7 @@ function App() {
 					<div className="slider-container">
 						{imagens.map((img, index) => (
 							<div key={index} className={`slider-box ${index === imgAtiva ? 'ativo' : ''}`}>
-								<img src={img.src} alt={img.alt} />
+								<img src={`${process.env.PUBLIC_URL}${img.src}`} alt={img.alt} />
 								<div className='texto-slider'>
 									<h2>{img.alt}</h2>
 									<p>Your Style, Our Passion</p>
@@ -110,15 +110,15 @@ function App() {
 				<div className='banner-content'>
 					<h3> Introducing </h3>
 					<h2>The barber shop<br></br>Science 2026 </h2>
-					<img className="about-logo" src='about-logo.png' alt="Logo da barbearia" />
+					<img className="about-logo" src={`${process.env.PUBLIC_URL}/Images/about-logo.png`} alt="Logo da barbearia" />
 					<p> Barber is a person whose occupation is mainly to cut dress groom style and shave men's and boys' hair. A barber's place of work is known as a "barbershop" or a "barber's". Barbershops are also places of social interaction and public discourse. In some instances, barbershops are also public forums. </p>
 					<a href="#service" className='btn-a'> MORE ABOUT US </a>
 				</div>
 
 				<div className="banner-images">
-					<img className="about01" src='about-1.jpg' alt="Imagem de uma barbearia" />
-					<img className="about02" src='about-2.jpg' alt="Imagem de uma barbearia" />
-					<img className="about03" src='about-3.jpg' alt="Imagem de uma barbearia" />
+					<img className="about01" src={`${process.env.PUBLIC_URL}/Images/about-1.jpg`} alt="Imagem de uma barbearia" />
+					<img className="about02" src={`${process.env.PUBLIC_URL}/Images/about-2.jpg`} alt="Imagem de uma barbearia" />
+					<img className="about03" src={`${process.env.PUBLIC_URL}/Images/about-3.jpg`} alt="Imagem de uma barbearia" />
 				</div>
 			</section>
 
@@ -126,31 +126,31 @@ function App() {
 				<div className="hero-content">
 					<h3>Trendy Salon & Spa </h3>
 					<h2> Our Services </h2>
-					<div class="heading-line">
-						<img src='heading-line.png'></img>
+					<div className="heading-line">
+						<img src={`${process.env.PUBLIC_URL}/Images/heading-line.png`} alt="line" />
 					</div>
 				</div>
 				<div className="hero-text">
 					<div className='hero-box'>
 
-						<img src="razor-1.png" class="bi-scissors" ></img>
+						<img src={`${process.env.PUBLIC_URL}/Images/razor-1.png`} className="bi-scissors" alt="razor" />
 						<h2> Haircut Styles</h2>
 						<p> Barber is a person whose occupation is mainly to cut dress style. </p>
 					</div>
 					<div className='hero-box'>
-						<img src="razor-2.png" class="bi-scissors" ></img>
+						<img src={`${process.env.PUBLIC_URL}/Images/razor-2.png`} className="bi-scissors" alt="razor" />
 						<h2> Beard Triming</h2>
 						<p> Barber is a person whose occupation is mainly to cut dress style. </p>
 					</div>
 					<div className='hero-box'>
-						<img src="razor-3.png" class="bi-scissors" ></img>
+						<img src={`${process.env.PUBLIC_URL}/Images/razor-3.png`} className="bi-scissors" alt="razor" />
 						<h2> Smooth Shave</h2>
 						<p>Barber is a person whose occupation is mainly to cut dress style. </p>
 					</div>
 					<div className='hero-box'>
-						<img src="razor-4.png" class="bi-scissors" ></img>
+						<img src={`${process.env.PUBLIC_URL}/Images/razor-4.png`} className="bi-scissors" alt="razor" />
 						<h2> Face Masking </h2>
-						<p> Barber is a person whose occupation is mainly to cut dress style. </p>
+						<p> Barber is a person whose occupation is mainly to cut dress groom style. </p>
 					</div>
 
 				</div>
@@ -161,7 +161,7 @@ function App() {
 
 					<img
 						className="Img-Appontament"
-						src="barbearia3.png"
+						src={`${process.env.PUBLIC_URL}/Images/barbearia3.png`}
 						alt="Barbearia"
 					/>
 				</div>
@@ -212,8 +212,8 @@ function App() {
 				<div className="hero-content">
 					<h3>Trendy Salon & Spa </h3>
 					<h2> Our Barbers </h2>
-					<div class="heading-line">
-						<img src='heading-line.png'></img>
+					<div className="heading-line">
+						<img src={`${process.env.PUBLIC_URL}/Images/heading-line.png`} alt="line" />
 					</div>
 				</div>
 
@@ -227,7 +227,7 @@ function App() {
 					<ul className="team_members row">
 						<li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
 							<div className="team_member">
-								<img className='img-barber' src='\team-3.jpg' alt="Team Member" />
+								<img className='img-barber' src={`${process.env.PUBLIC_URL}/Images/team-3.jpg`} alt="Team Member" />
 								<div className="overlay">
 									<h3>Kyle Frederick</h3>
 									<p>WEB DESIGNER</p>
@@ -237,7 +237,7 @@ function App() {
 
 						<li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
 							<div className="team_member">
-								<img className='img-barber' src='\team-1.jpg' alt="Team Member" />
+								<img className='img-barber' src={`${process.env.PUBLIC_URL}/Images/team-1.jpg`} alt="Team Member" />
 								<div className="overlay">
 									<h3>José Carpio</h3>
 									<p>WORDPRESS DEVELOPER</p>
@@ -247,7 +247,7 @@ function App() {
 
 						<li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="400ms">
 							<div className="team_member">
-								<img className='img-barber' src='\team-2.jpg' alt="Team Member" />
+								<img className='img-barber' src={`${process.env.PUBLIC_URL}/Images/team-2.jpg`} alt="Team Member" />
 								<div className="overlay">
 									<h3>Michel Ibáñez</h3>
 									<p>ONLINE MARKETER</p>
@@ -257,7 +257,7 @@ function App() {
 
 						<li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
 							<div className="team_member">
-								<img className='img-barber' src='\team-4.jpg' alt="Team Member" />
+								<img className='img-barber' src={`${process.env.PUBLIC_URL}/Images/team-4.jpg`} alt="Team Member" />
 								<div className="overlay">
 									<h3>Adam Castellon</h3>
 									<p>JAVA SPECIALIST</p>
@@ -271,8 +271,8 @@ function App() {
 				<div className="hero-content">
 					<h3>Save 20% On Beauty Spa</h3>
 					<h2> Our Barber Pricing </h2>
-					<div class="heading-line">
-						<img src='heading-line.png'></img>
+					<div className="heading-line">
+						<img src={`${process.env.PUBLIC_URL}/Images/heading-line.png`} alt="line" />
 					</div>
 				</div>
 
@@ -425,7 +425,7 @@ function App() {
 				</div>
 
 			</section>
-			<section className='Sec-img'>
+			<section className='Sec-img' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/Images/barbearia.jpg)`}}>
 				<div className='section-img'>
 					<div className='division-img'>
 						<h2>Making You Look Good <br></br>Is In Our Haritage</h2>
@@ -453,7 +453,7 @@ function App() {
 
 							<img
 								className="Img-Blog"
-								src="post-1.jpg"
+								src={`${process.env.PUBLIC_URL}/Images/post-1.jpg`}
 								alt="Barbearia" />
 
 							<div className='Blog-text'>
@@ -471,7 +471,7 @@ function App() {
 
 							<img
 								className="Img-Blog"
-								src="post-2.jpg"
+								src={`${process.env.PUBLIC_URL}/Images/post-2.jpg`}
 								alt="Barbearia" />
 
 							<div className='Blog-text'>
@@ -489,7 +489,7 @@ function App() {
 
 							<img
 								className="Img-Blog"
-								src="post-3.jpg"
+								src={`${process.env.PUBLIC_URL}/Images/post-3.jpg`}
 								alt="Barbearia" />
 
 							<div className='Blog-text'>
@@ -508,16 +508,16 @@ function App() {
 			</section>
 			<section className='Scroll'>
 				<div className='Scroll-container'>
-					<div className='Scroll-item'> <img src='sponsor-1.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-2.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-3.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-4.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-5.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-1.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-2.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-3.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-4.png' alt='imagem' /> </div>
-					<div className='Scroll-item'> <img src='sponsor-5.png' alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-1.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-2.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-3.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-4.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-5.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-1.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-2.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-3.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-4.png`} alt='imagem' /> </div>
+					<div className='Scroll-item'> <img src={`${process.env.PUBLIC_URL}/Images/sponsor-5.png`} alt='imagem' /> </div>
 				</div>
 			</section>
 			<section className="section-widget">
@@ -525,7 +525,7 @@ function App() {
 
 					{/* BLOCO 1 — Logo + texto + redes */}
 					<div className="Div-container-spaces">
-						<img className='logo-foot' src="logo.png" alt="Logo" />
+						<img className='logo-foot' src={`${process.env.PUBLIC_URL}/Images/logo.png`} alt="Logo" />
 
 						<p>
 							Our barbershop is the created for men who appreciate premium quality,
