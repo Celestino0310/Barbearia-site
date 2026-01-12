@@ -1,13 +1,15 @@
 import './App.css';
-import React, { useRef, useState } from 'react';
+import React, {useRef, useState } from 'react';
 import './index.js';
-import { getActiveElement } from '@testing-library/user-event/dist/utils/index.js';
+
 
 /* inicio*/
 
 /* aplicação Main */
 function App() {
 	const [imgAtiva, setImgAtiva] = useState(1);
+     // corrige esses erros ai 
+     useRef();
 
 	const imagens = [
 		{ src: '/Images/about-2.jpg', alt: 'Our hair style enhances your smile' },
@@ -449,61 +451,61 @@ function App() {
 					</div>
 					<div className='Blog-container'>
 
-						<div className='Blog-item'>
+                        <div className='Blog-item'>
 
-							<img
-								className="Img-Blog"
-								src={`${process.env.PUBLIC_URL}/Images/post-1.jpg`}
-								alt="Barbearia" />
+                            <img
+                                className="Img-Blog"
+                                src={`${process.env.PUBLIC_URL}/Images/post-1.jpg`}
+                                alt="Barbearia" />
 
-							<div className='Blog-text'>
-								< a className='Blog-text-indication'> INTERIOR </a>
-								<h2>
-									Minimalist trending in modern architecture 2019
-								</h2>
-								<p>
-									Building first evolved out dynamics between needs means available building materials attendant skills.
-								</p>
-								<a> read more </a>
-							</div>
-						</div>
-						<div className='Blog-item'>
+                            <div className='Blog-text'>
+                                <a href="#blog" className='Blog-text-indication'> INTERIOR </a>
+                                <h2>
+                                    Minimalist trending in modern architecture 2019
+                                </h2>
+                                <p>
+                                    Building first evolved out dynamics between needs means available building materials attendant skills.
+                                </p>
+                                <a href="#blog"> read more </a>
+                            </div>
+                        </div>
+                        <div className='Blog-item'>
 
-							<img
-								className="Img-Blog"
-								src={`${process.env.PUBLIC_URL}/Images/post-2.jpg`}
-								alt="Barbearia" />
+                            <img
+                                className="Img-Blog"
+                                src={`${process.env.PUBLIC_URL}/Images/post-2.jpg`}
+                                alt="Barbearia" />
 
-							<div className='Blog-text'>
-								< a className='Blog-text-indication'> ARCHITETURE </a>
-								<h2>
-									Terrace in the town yamazaki kentaro design workshop.
-								</h2>
-								<p>
-									Building first evolved out dynamics between needs means available building materials attendant skills.
-								</p>
-								<a> read more </a>
-							</div>
-						</div>
-						<div className='Blog-item'>
+                            <div className='Blog-text'>
+                                <a href="#blog" className='Blog-text-indication'> ARCHITETURE </a>
+                                <h2>
+                                    Terrace in the town yamazaki kentaro design workshop.
+                                </h2>
+                                <p>
+                                    Building first evolved out dynamics between needs means available building materials attendant skills.
+                                </p>
+                                <a href="#blog"> read more </a>
+                            </div>
+                        </div>
+                        <div className='Blog-item'>
 
-							<img
-								className="Img-Blog"
-								src={`${process.env.PUBLIC_URL}/Images/post-3.jpg`}
-								alt="Barbearia" />
+                            <img
+                                className="Img-Blog"
+                                src={`${process.env.PUBLIC_URL}/Images/post-3.jpg`}
+                                alt="Barbearia" />
 
-							<div className='Blog-text'>
-								< a className='Blog-text-indication'> DESIGN </a>
-								<h2>
-									W270 house são paulo arquitetos fabio jorge architeqture.
-								</h2>
-								<p>
-									Building first evolved out dynamics between needs means available building materials attendant skills.
-								</p>
-								<a> read more </a>
-							</div>
-						</div>
-					</div>
+                            <div className='Blog-text'>
+                                <a href="#blog" className='Blog-text-indication'> DESIGN </a>
+                                <h2>
+                                    W270 house são paulo arquitetos fabio jorge architeqture.
+                                </h2>
+                                <p>
+                                    Building first evolved out dynamics between needs means available building materials attendant skills.
+                                </p>
+                                <a href="#blog"> read more </a>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 			</section>
 			<section className='Scroll'>
@@ -597,9 +599,9 @@ function App() {
 			<footer>
 				<p> &copy; 2026 Trendy Salon & Spa. All Rights Reserved.</p>
 				<nav>
-					<a href='#'>ORDERS </a>
-					<a href='#' > TERMS </a>
-					<a href='#'> REPORT PROBLEM</a>
+					<a href='#order'>ORDERS </a>
+					<a href='#term' > TERMS </a>
+					<a href='#support'> REPORT PROBLEM</a>
 				</nav>
 			</footer>
 

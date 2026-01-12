@@ -963,7 +963,7 @@ Scroll {
   gap: 10px;
   width: max-content;
    overflow: hidden;
-  animation: scrollInfinito 18s linear infinite;
+  animation: scrollInfinito 8s linear infinite;
 }
 
 .Scroll-item {
