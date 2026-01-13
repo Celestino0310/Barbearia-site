@@ -1,0 +1,129 @@
+/* Slider/Carrossel CSS */
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
+  font-family: "Prata", serif;
+}
+
+.slider {
+  height: 100vh;
+  position: relative;
+}
+
+.sliderContainer .sliderBox {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.sliderBox img {
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+}
+
+.sliderBox::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #000, transparent);
+}
+
+.textoSlider {
+  position: absolute;
+  top: 35%;
+  left: 10;
+  color: white;
+  margin-left: 10%;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.textoSlider h2 {
+  font-size: 4rem;
+}
+
+@keyframes animarTexto {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(13px);
+  }
+}
+
+.sliderBox.ativo a,
+.sliderBox.ativo h2,
+.sliderBox.ativo p {
+  animation: animarTexto 2s ease-in-out forwards;
+}
+
+.sliderBox.ativo h2 {
+  animation-delay: 0.2s;
+}
+
+.sliderBox.ativo {
+  opacity: 1;
+  z-index: 9;
+  margin-top: 70px;
+}
+
+.setas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 4%;
+  z-index: 26;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setas button {
+  width: 35px;
+  height: 35px;
+  background-color: #777777;
+  color: black;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.btnS {
+  position: relative;
+  top: 20px;
+  right: 12px;
+  background-color: #9D8977;
+  max-width: 200px;
+  color: white;
+  margin: 10px;
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 1px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btnS::before {
+  content: '';
+  inset: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  z-index: -1;
+}
+
+.btnS:hover::before {
+  transform: scaleX(1);
+}

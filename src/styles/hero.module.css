@@ -1,0 +1,98 @@
+/* Hero CSS */
+.hero {
+  width: 100%;
+  height: 70vh;
+  background-color: #F7F2EF;
+  margin-top: 15%;
+  border: #000;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #EEEEEE;
+  padding: 50px 20px 0px 20px;
+}
+
+.heroContent h2 {
+  font-size: 36px;
+  font-family: 'Prata', serif;
+  color: #303133;
+}
+
+.heroContent h3 {
+  font-size: 17px;
+  font-family: 'Prata', serif;
+  color: #9E8A78;
+}
+
+.heroBox {
+  background-color: #FFFFFF;
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Prata', serif;
+  animation: animarTexto 2s ease-in-out forwards;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+
+@keyframes animarTexto {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(13px);
+  }
+}
+
+.biScissors {
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+}
+
+.bsScissors:before {
+  content: "\e92b";
+}
+
+.heroText {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  margin: 0 auto;
+  padding: 10px;
+  margin: 30px;
+  max-width: 92%;
+  align-items: center;
+  margin-left: 4%;
+  justify-content: center;
+}
+
+@media (max-width: 1150px) {
+  .heroText {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 720px) {
+  .heroText {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    margin-top: 50%;
+  }
+}
+
+.imgHero {
+  width: 100%;
+  height: 70%;
+  max-height: 660px;
+}

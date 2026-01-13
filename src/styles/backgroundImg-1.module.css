@@ -1,0 +1,38 @@
+/* Background Image Section CSS */
+.secImg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.sectionImg {
+  display: flex;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  text-shadow: #000;
+}
+
+.divisionImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.divisionImg h2 {
+  font-family: 'Prata', serif;
+  font-size: 42px;
+  color: #FFFFFF;
+}
+
+.divisionImg p {
+  font-size: 16px;
+  font-family: 'Lato', serif;
+  color: #FFFFFF;
+  font-weight: 700;
+}

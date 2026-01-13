@@ -949,42 +949,6 @@ select:focus {
   height: auto  ;
 
 }
-/* ===========================================
-   scroll section 
-  ============================================  */
-Scroll {
-  width: 100%;
-  overflow: hidden;
-}
-
-.Scroll-container {
-  display: flex;
-  border-top:1px solid #EEEEEE;
-  gap: 10px;
-  width: max-content;
-   overflow: hidden;
-  animation: scrollInfinito 8s linear infinite;
-}
-
-.Scroll-item {
-  flex: 0 0 auto;
-  padding: 30px 20px;
-  white-space: nowrap;
-  
-}
-
-
-@keyframes scrollInfinito {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-
-
 
 /* SUB-FOOTER parte de cima do footer com a mesma cor*/
 

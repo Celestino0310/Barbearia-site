@@ -1,0 +1,78 @@
+/* Team CSS */
+.servicesSection {
+  background-color: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 10px;
+  padding: 30px 50px;
+  list-style: none;
+  animation: animarTexto 2s ease-in-out forwards;
+}
+
+@keyframes animarTexto {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(13px);
+  }
+}
+
+.imgBarber {
+  width: 265px;
+  height: 270px;
+}
+
+.teamMember {
+  position: relative;
+  overflow: hidden;
+}
+
+.teamMember img {
+  width: 100%;
+  display: block;
+}
+
+/* OVERLAY ESCONDIDO */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+/* QUANDO PASSA O MOUSE */
+.teamMember:hover .overlay {
+  opacity: 1;
+  filter: grayscale(100%);
+}
+
+.overlay {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.4s ease;
+}
+
+.teamMember:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}

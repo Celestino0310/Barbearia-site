@@ -1,0 +1,63 @@
+/* Price CSS */
+.price {
+  background-color: #F7F2EF;
+}
+
+.priceContent {
+  font-family: 'Lato', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: -50px 210px 50px 210px;
+  gap: 40px;
+  padding: 80px;
+  align-items: center;
+}
+
+.priceLine {
+  display: flex;
+  align-items: center;
+}
+
+.priceText h3 {
+  font-family: 'Prata', serif;
+  font-size: 17px;
+  background-color: #9e8a78;
+  color: #FFFFFF;
+  width: 40%;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.priceLine h4 {
+  font-family: 'Prata', serif;
+  font-size: 18px;
+  color: #333333;
+  margin: 0;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.priceLine .line {
+  flex: 1;
+  border-bottom: 1px dashed #bbb;
+  margin: 0 10px;
+}
+
+.priceLine .price {
+  font-family: 'Prata', serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #a58d7f;
+  white-space: nowrap;
+}
+
+.priceItem {
+  margin: 20px 0 0 0;
+}
+
+.priceItem p {
+  font-family: 'Lato', serif;
+  color: #777777;
+  font-size: 16px;
+}

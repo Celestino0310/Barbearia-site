@@ -1,0 +1,77 @@
+/* Widget CSS - Sub-footer */
+.sectionWidget {
+  unicode-bidi: isolate;
+  color: #999999;
+}
+
+.divContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #222227;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 180px;
+}
+
+.divContainerSpaces {
+  display: flex;
+  flex-direction: column;
+  margin: 14px;
+}
+
+.divContainerSpaces h3 {
+  color: white;
+  font-size: 17px;
+  font-family: 'Prata', serif;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.ulIcons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 13px;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.ulIcons p {
+  margin-top: 16px;
+  font-family: 'Lato', serif;
+}
+
+.logoFoot {
+  width: 200px;
+  height: 60px;
+  margin: 0 0 15px;
+}
+
+.divContainerSpaces input {
+  grid-column: span 1;
+  background: #7A7A7D;
+  margin: 10px 0;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.divContainerSpaces input::placeholder {
+  color: #DDDDDD;
+}
+
+.footerBtn {
+  padding: 12px;
+  background-color: #8E7B6A;
+  border: none;
+  cursor: pointer;
+  color: #ddd;
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footerBtn:hover {
+  background: #6a5b46;
+}
