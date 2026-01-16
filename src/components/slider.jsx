@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import styles from '../styles/slider.module.css';
+//
 
 export function Slider() {
 
