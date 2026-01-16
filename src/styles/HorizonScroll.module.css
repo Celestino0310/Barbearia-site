@@ -1,0 +1,44 @@
+.secImg {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  cursor: grab;
+  width: 100%;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 0 10vw;
+  text-align: center;
+  color: #fff;
+  user-select: none;
+}
+
+.slide p{
+
+  font-family: 'Prata', serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.slide span {
+  display: block;
+  margin-top: 20px;
+  font-size: 1rem;
+  opacity: 0.8;
+}

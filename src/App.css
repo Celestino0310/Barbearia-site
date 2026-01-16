@@ -319,10 +319,7 @@ a{
 }
 
 
-
-
-
-/* Banner */
+/* banner */ 
 
 .banner{
   display: flex;
@@ -331,6 +328,7 @@ a{
   margin-top: 8%;
  
 }
+
 .banner-content{
   
   display: flex;
@@ -1072,6 +1070,7 @@ footer a{
   margin:20px;
   right: 100px;
 }
+
 footer p{
   color: #DDD;
 }

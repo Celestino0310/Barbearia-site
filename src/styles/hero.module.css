@@ -10,6 +10,7 @@
 .heroContent {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid #EEEEEE;
@@ -76,6 +77,7 @@
 @media (max-width: 1150px) {
   .heroText {
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 160px;
   }
   .hero {
     margin-top: 25%;

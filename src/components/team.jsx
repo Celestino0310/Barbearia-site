@@ -1,12 +1,12 @@
 import styles from '../styles/team.module.css';
 
 export function Team() {
-    return ( 
-        
+	return (
 
-			<section id="team" className="team_section bd-bottom padding">
-				<div className={styles.container}>
 
+		<section id="team" className="team_section bd-bottom padding">
+			<div className={styles.container}>
+				
 					<ul className="team_members row">
 						<li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
 							<div className="team_member">
@@ -49,6 +49,7 @@ export function Team() {
 						</li>
 					</ul>
 				</div>
-			</section>
-    );
+		
+		</section>
+	);
 }  

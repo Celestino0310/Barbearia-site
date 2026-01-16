@@ -4,7 +4,7 @@ export function Banner() {
     return ( 
 			<section className={styles.banner}>
 
-				<div className={styles['banner-content']}>
+				<div className={styles['bannerContent']}>
 					<h3> Introducing </h3>
 					<h2>The barber shop<br></br>Science 2026 </h2>
 					<img className="about-logo" src={`${process.env.PUBLIC_URL}/Images/about-logo.png`} alt="Logo da barbearia" />
@@ -13,9 +13,9 @@ export function Banner() {
 				</div>
 
 				<div className={styles['banner-images']}>
-					<img className="about01" src={`${process.env.PUBLIC_URL}/Images/about-1.jpg`} alt="Imagem de uma barbearia" />
-					<img className="about02" src={`${process.env.PUBLIC_URL}/Images/about-2.jpg`} alt="Imagem de uma barbearia" />
-					<img className="about03" src={`${process.env.PUBLIC_URL}/Images/about-3.jpg`} alt="Imagem de uma barbearia" />
+					<img className={styles.about01} src={`${process.env.PUBLIC_URL}/Images/about-1.jpg`} alt="Imagem de uma barbearia" />
+					<img className={styles.about02} src={`${process.env.PUBLIC_URL}/Images/about-2.jpg`} alt="Imagem de uma barbearia" />
+					<img className={styles.about03} src={`${process.env.PUBLIC_URL}/Images/about-3.jpg`} alt="Imagem de uma barbearia" />
 				</div>
 			</section>
     );
