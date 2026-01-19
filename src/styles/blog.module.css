@@ -1,69 +1,69 @@
 /* Blog Section CSS */
-.blogSection {
+.Blog-section {
   width: 100%;
   height: 100%;
   background-color: #F6F6F6;
 }
 
-.blog {
+.Blog {
   background-color: #F6F6F6;
-  padding: 140px 200px 140px 200px;
+  padding: 100px 200px 120px 200px;
 }
 
-.blogTitle {
+.Blog-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.blogTitle h2 {
+.Blog-title h2 {
   font-family: 'Prata', serif;
   font-size: 36px;
   color: #303133;
   font-weight: 400;
 }
 
-.blogTitle h3 {
+.Blog-title h3 {
   font-family: 'Prata', serif;
   font-size: 17px;
   color: #303133;
   font-weight: 400;
 }
 
-.blogContainer {
+.Blog-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   justify-content: space-between;
 }
 
-.blogItems {
+.Blog-item {
   display: flex;
   flex-direction: column;
   padding: 30px;
 }
 
-.blogText {
+.Blog-text {
   padding: 30px;
   background-color: #FFFFFF;
 }
 
-.blogText h2 {
+.Blog-text h2 {
   font-family: 'Prata', serif;
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-.blogText p {
+.Blog-text p {
   font-family: 'Lato', serif;
   font-size: 16px;
 }
 
-.blogTextIndication {
+.Blog-text-indication {
   position: relative;
   font-family: 'Work Sans', sans-serif;
-  bottom: 62px;
+  bottom: 59px;
   right: 30px;
   font-family: 'Lato', serif;
   font-size: 12px;
@@ -72,7 +72,23 @@
   padding: 8px 15px;
 }
 
-.imgBlog {
-  width: 90%;
+.ImgBlog {
+  width: 100%;
   height: auto;
+    filter: grayscale(0%);
+}
+.ImgBlog:hover {
+  filter: grayscale(100%);
+  transition: transform 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+  .Blog {
+    padding: 50px 20px 60px 20px;
+  }
+  .Blog-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

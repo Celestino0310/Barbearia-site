@@ -1,77 +1,89 @@
-/* Widget CSS - Sub-footer */
-.sectionWidget {
+.section-widget{
   unicode-bidi: isolate;
-  color: #999999;
+  color:#999999;
 }
-
-.divContainer {
+.Div-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #222227;
   align-items: flex-start;
   justify-content: center;
   padding: 80px 180px;
+
 }
 
-.divContainerSpaces {
-  display: flex;
-  flex-direction: column;
-  margin: 14px;
+.Div-container-spaces{
+    display: flex;
+    flex-direction: column;
+    margin:14px;
+    
 }
 
-.divContainerSpaces h3 {
+.Div-container-spaces h3{
   color: white;
   font-size: 17px;
-  font-family: 'Prata', serif;
+  font-family: 'Prata',serif;
   margin-bottom: 15px;
   font-weight: 600;
 }
-
-.ulIcons {
+.ul-icons{
   display: flex;
   justify-content: flex-start;
-  gap: 13px;
+  gap:13px;
 }
-
-.icons {
+.icons{
   cursor: pointer;
 }
 
-.ulIcons p {
+.ul-icons p{
   margin-top: 16px;
-  font-family: 'Lato', serif;
+  font-family: 'Lato',serif;
 }
 
-.logoFoot {
-  width: 200px;
+.logo-foot{
+  width: 200px ;
   height: 60px;
   margin: 0 0 15px;
 }
 
-.divContainerSpaces input {
+
+.Div-container-spaces input{
   grid-column: span 1;
   background: #7A7A7D;
+  
   margin: 10px 0;
   border: none;
   padding: 14px;
   font-weight: bold;
+  
   transition: 0.3s;
 }
 
-.divContainerSpaces input::placeholder {
-  color: #DDDDDD;
+.Div-container-spaces input::placeholder{
+  color:#DDDDDD;
+}
+.footer-btn{
+    padding: 12px;
+    background-color: #8E7B6A;
+    border: none;
+    cursor: pointer;
+    color: #ddd;
+    font-size: 12px;
+    font-family: 'Work Sans',sans-serif;
+    
+}
+.footer-btn:hover {
+  background: #6a5b46
 }
 
-.footerBtn {
-  padding: 12px;
-  background-color: #8E7B6A;
-  border: none;
-  cursor: pointer;
-  color: #ddd;
-  font-size: 12px;
-  font-family: 'Work Sans', sans-serif;
-}
-
-.footerBtn:hover {
-  background: #6a5b46;
+@media screen and (max-width: 768px) {
+  .Div-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .Div-container-spaces  {
+    width: 100%;
+    padding: 30px ;
+  } 
 }

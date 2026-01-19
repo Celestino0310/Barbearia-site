@@ -40,6 +40,16 @@ export function HorizonScroll() {
     }
   };
 
+  // Três textos diferentes para o carrossel
+  const textos = [
+    "Texto 1: Este é o primeiro texto do carrossel.",
+    "Texto 2: Aqui temos o segundo texto, diferente do primeiro.",
+    "Texto 3: E este é o terceiro texto, completando o ciclo."
+  ];
+
+  // Duplicamos os textos para garantir o loop infinito
+  const textosCompletos = [...textos, ...textos, ...textos];
+
   return (
     <section
       className={styles.secImg}
@@ -55,16 +65,13 @@ export function HorizonScroll() {
         onMouseLeave={onMouseLeave}
         onMouseMove={onMouseMove}
       >
-        {[1, 2, 3, 1, 2, 3].map((item, i) => (
+        {textosCompletos.map((texto, i) => (
           <div key={i} className={styles.slide}>
-            <p>
-              “There are design companies, and then there are user experience
-              design interface professionals.”
-            </p>
-            <span>Anita Tran, IT Solutions</span>
+            <p>{texto}</p>
           </div>
         ))}
       </div>
     </section>
   );
 }
+

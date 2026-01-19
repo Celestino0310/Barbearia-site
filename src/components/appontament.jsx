@@ -4,18 +4,18 @@ export  function Appontament() {
 
     return ( 
         
-			<section id="Appontament" className='Appontament'>
+			<section id="Appontament" className={styles.Appontament}>
 				{/* LADO ESQUERDO */}
-				<div className="Div-Apponntament">
+				<div className={styles.DivApponntament}>
 
 					<img
-						className="Img-Appontament"
+						className={styles.ImgAppontament}
 						src={`${process.env.PUBLIC_URL}/Images/barbearia3.png`}
 						alt="Barbearia"
 					/>
 				</div>
 				{/* LADO DIREITO */}
-				<div className="Formulario">
+				<div className={styles.Formulario}>
 					<h2>Make an Appointment</h2>
 
 

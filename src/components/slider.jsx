@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 //
 
 export function Slider() {
@@ -6,8 +6,7 @@ export function Slider() {
  
         const [imgAtiva, setImgAtiva] = useState(1);
         // corrige esses erros ai 
-        useRef();
-
+    
         const imagens = [
             { src: './Images/about-2.jpg', alt: 'Our hair style enhances your smile' },
             { src: './Images/about-1.jpg', alt: 'Lorem ipsum dolor sit amet ' },

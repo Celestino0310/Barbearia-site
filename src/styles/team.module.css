@@ -1,5 +1,5 @@
 /* Team CSS */
-.servicesSection {
+.service-Section {
   background-color: #FFFFFF;
 }
 
@@ -10,7 +10,7 @@
   background-color: #FFFFFF;
 }
 
-.teamMembers {
+.team-members {
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -31,17 +31,17 @@
   }
 }
 
-.imgBarber {
+.img-barber {
   width: 265px;
   height: 270px;
 }
 
-.teamMember {
+.team-member {
   position: relative;
   overflow: hidden;
 }
 
-.teamMember img {
+.team-member img {
   width: 100%;
   display: block;
 }
@@ -61,7 +61,7 @@
 }
 
 /* QUANDO PASSA O MOUSE */
-.teamMember:hover .overlay {
+.team-member:hover .overlay {
   opacity: 1;
   filter: grayscale(100%);
 }
@@ -72,7 +72,21 @@
   transition: 0.4s ease;
 }
 
-.teamMember:hover .overlay {
+.team-member:hover .overlay {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+@media screen and (max-width: 768px) {
+ .team-members {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+  }
+  .team-members img{
+    width: 100%;
+    height: auto;
+  }
 }

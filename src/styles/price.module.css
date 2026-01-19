@@ -1,9 +1,30 @@
 /* Price CSS */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #EEEEEE;
+  padding: 50px 20px 0px 20px;
+}
+.hero-content h2{
+  font-size: 36px;
+  font-family: 'Prata',serif;
+  color: #303133;
+}
+.hero-content h3{
+  font-size: 17px;
+  font-family: 'Prata',serif;
+  color: #9E8A78;
+ 
+}
+
 .price {
   background-color: #F7F2EF;
 }
 
-.priceContent {
+.price-content {
   font-family: 'Lato', sans-serif;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -13,12 +34,12 @@
   align-items: center;
 }
 
-.priceLine {
+.price-line {
   display: flex;
   align-items: center;
 }
 
-.priceText h3 {
+.price-text h3 {
   font-family: 'Prata', serif;
   font-size: 17px;
   background-color: #9e8a78;
@@ -29,7 +50,7 @@
   padding: 10px;
 }
 
-.priceLine h4 {
+.price-line h4 {
   font-family: 'Prata', serif;
   font-size: 18px;
   color: #333333;
@@ -38,13 +59,13 @@
   white-space: nowrap;
 }
 
-.priceLine .line {
+.price-line .line {
   flex: 1;
   border-bottom: 1px dashed #bbb;
   margin: 0 10px;
 }
 
-.priceLine .price {
+.price-line .price {
   font-family: 'Prata', serif;
   font-size: 25px;
   font-weight: bold;
@@ -52,12 +73,22 @@
   white-space: nowrap;
 }
 
-.priceItem {
+.price-item {
   margin: 20px 0 0 0;
 }
 
-.priceItem p {
+.price-item p {
   font-family: 'Lato', serif;
   color: #777777;
-  font-size: 16px;
+  font-size: 17px;
+}
+
+
+@media screen and (max-width: 768px) {
+ .price-content {
+    min-width: 300px;
+    grid-template-columns: 1fr;
+    margin: -10px 20px 50px 20px;
+    padding: 40px;
+  }
 }
