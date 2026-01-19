@@ -26,7 +26,7 @@ export function Blog () {
                                 <p>
                                     Building first evolved out dynamics between needs means available building materials attendant skills.
                                 </p>
-                                <a href="#blog"> read more </a>
+                                 <a className={styles.specialLink} href="#blog"> read more </a>
                             </div>
                         </div>
                         <div className={styles['Blog-item']}>
@@ -44,7 +44,7 @@ export function Blog () {
                                 <p>
                                     Building first evolved out dynamics between needs means available building materials attendant skills.
                                 </p>
-                                <a href="#blog"> read more </a>
+                               <a className={styles.specialLink} href="#blog"> read more </a>
                             </div>
                         </div>
                         <div className={styles['Blog-item']}>
@@ -62,7 +62,7 @@ export function Blog () {
                                 <p>
                                     Building first evolved out dynamics between needs means available building materials attendant skills.
                                 </p>
-                                <a href="#blog"> read more </a>
+                               <a className={styles.specialLink} href="#blog"> read more </a>
                             </div>
                         </div>
                     </div>

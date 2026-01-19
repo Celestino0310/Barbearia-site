@@ -127,3 +127,9 @@
 .btnS:hover::before {
   transform: scaleX(1);
 }
+
+@media (max-width: 768px) {
+  .textoSlider h2 {
+    font-size: 2.5rem;
+  }
+}

@@ -9,7 +9,7 @@ export  function Appontament() {
 				<div className={styles.DivApponntament}>
 
 					<img
-						className={styles.ImgAppontament}
+						className={styles['Img-Appontament']}
 						src={`${process.env.PUBLIC_URL}/Images/barbearia3.png`}
 						alt="Barbearia"
 					/>

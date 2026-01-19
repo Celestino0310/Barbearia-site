@@ -1,13 +1,22 @@
 /* Header CSS */
-header {
-
-  top: 0;
-  left: 0;
+.main {
   width: 100%;
   height: 80px;
   background-color: #222227;
   position: fixed;
   z-index: 9999999;
+  top: 0;
+  left: 0;
+}
+
+.center {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo img {
@@ -21,39 +30,166 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 3px;
-  min-width: 70%;
+  justify-content: flex-end;
+  gap: 20px;
   font-size: 11px;
-  margin-top: 1%;
 }
 
-a {
+.navegation a {
   text-decoration: none;
   color: #f8f9fa;
+  transition: 0.3s;
+}
+
+.navegation a:hover {
+  opacity: 0.7;
 }
 
 .options {
   display: flex;
   color: white;
   flex-direction: row;
-  width: 120%;
   justify-content: flex-end;
   gap: 20px;
   text-decoration: none;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.headerBtn {
-  margin-left: 90px;
+.options li {
+  letter-spacing: 2px;
+}
+
+.header-btn {
   background-color: #9D8977;
-  max-width: 300px;
   color: white;
   padding: 15px 20px;
   cursor: pointer;
   border-radius: 1px;
+  white-space: nowrap;
+  transition: background-color 0.3s;
 }
 
-.headerBtn:hover {
+
+.header-btn:hover {
   background-color: #857568;
+}
+
+.header-btn a {
+  color: white;
+}
+
+/* Mobile Menu (hidden by default) */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
   transition: 0.3s;
 }
+
+/* Responsividade */
+@media screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .center {
+    padding: 0 10px;
+  }
+
+  .logo img {
+    width: 150px;
+    margin-left: 0;
+  }
+
+  .navegation {
+    gap: 10px;
+  }
+
+  .options {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 50vw;
+    height: calc(100vh - 80px);
+    background: #222227;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    gap: 0;
+    color: #FFFFFF;
+  }
+
+  .options li {
+    margin-left: 0;
+    opacity: 1;
+  }
+
+  .options.active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu {
+    display: block;
+    order: 2;
+    color: #f8f9fa;
+  }
+
+  .header-btn {
+    order: 1;
+    margin-right: 20px;
+    padding: 12px 16px;
+    font-size: 10px;
+  }
+}
+
+/* Animação dos links do menu mobile */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animação do ícone hambúrguer */
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 130px;
+  }
+
+  .header-btn {
+    padding: 15px 14px;
+    font-size: 9px;
+    color: #fff;
+  }
+
+  .options {
+    width: 60vw;
+  }
+}
+

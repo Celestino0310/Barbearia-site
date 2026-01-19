@@ -26,9 +26,9 @@ function App() {
 	    <Banner />
       <Hero />
       <Appontament />
-	    <HorizonScroll />
       <Service />
       <Team />
+       <HorizonScroll />
       <Price />
       <BackgroudImg1 />
       <Blog />

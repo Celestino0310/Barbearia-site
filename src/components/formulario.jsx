@@ -1,18 +1,18 @@
 import styles from '../styles/formulario.module.css';
 
 export function formulario() {
-    return ( <section id="Appontament" className='Appontament'>
+    return ( <section id="Appontament" className={styles.Appontament}>
 				{/* LADO ESQUERDO */}
-				<div className="Div-Apponntament">
+				<div className={styles["Div-Apponntament"]}>
 
 					<img
-						className="Img-Appontament"
+						className={styles["Img-Appontament"]}
 						src={`${process.env.PUBLIC_URL}/Images/barbearia3.png`}
 						alt="Barbearia"
 					/>
 				</div>
 				{/* LADO DIREITO */}
-				<div className="Formulario">
+				<div className={styles.Formulario}>
 					<h2>Make an Appointment</h2>
 
 

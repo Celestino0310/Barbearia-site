@@ -9,8 +9,8 @@ export function Slider() {
     
         const imagens = [
             { src: './Images/about-2.jpg', alt: 'Our hair style enhances your smile' },
-            { src: './Images/about-1.jpg', alt: 'Lorem ipsum dolor sit amet ' },
-            { src: './Images/barbearia3.png', alt: 'lorem ipsum dolor sit amet sit alert' }
+            { src: './Images/about-1.jpg', alt: 'Being a barber is about taking care of your hair' },
+            { src: './Images/barbearia3.png', alt: 'Where mans want to look there very best' }
         ];
 
 
@@ -32,8 +32,9 @@ export function Slider() {
                             <div key={index} className={`slider-box ${index === imgAtiva ? 'ativo' : ''}`}>
                                 <img src={`${process.env.PUBLIC_URL}${img.src}`} alt={img.alt} />
                                 <div className='texto-slider'>
+                                    <h3>Welcome to BarberShop</h3>
                                     <h2>{img.alt}</h2>
-                                    <p>Your Style, Our Passion</p>
+                                    <p>our barbershopis the territory created purely for males who appreciate premium quality,<br></br>times and flawless look.</p>
 
 
 
