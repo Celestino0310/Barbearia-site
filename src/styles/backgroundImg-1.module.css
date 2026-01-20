@@ -6,6 +6,7 @@
   background-attachment: fixed;
   height: 100vh;
   width: 100%;
+  filter:grayscale(30%);
 }
 
 .section-img {
@@ -14,6 +15,7 @@
   align-items: center;
   justify-content: center;
   text-shadow: #000;
+
 }
 
 .division-img {

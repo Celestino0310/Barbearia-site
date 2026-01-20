@@ -49,7 +49,7 @@ export  function Appontament() {
 
 					<img
 						className={styles['Img-Appontament']}
-						src={`${process.env.PUBLIC_URL}/Images/barbearia3.png`}
+						src={`${process.env.PUBLIC_URL}/Images/Back-appontament.jpg`}
 						alt="Barbearia"
 					/>
 				</div>

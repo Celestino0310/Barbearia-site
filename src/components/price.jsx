@@ -12,10 +12,10 @@ export function Price() {
                 </div>
             </div>
 
-            <div className={styles['price-content']+' animate-on-scroll fade-in'}>
+            <div className={styles['price-content'] + ' animate-on-scroll fade-in'}>
 
                 <div className={styles['price-text']}>
-                    
+
                     <h3> Hair Styling </h3>
                     <ul>
 
@@ -29,7 +29,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Professional haircut that enhances your personal style with modern techniques and impeccable finishing to leave you feeling renewed.
                             </p>
                         </li>
                         <li className={styles['price-item']}>
@@ -42,7 +42,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Hair modeling and finishing with quality products, creating the perfect look for any special occasion or everyday style.
                             </p>
                         </li>
                         <li className={styles['price-item']}>
@@ -55,7 +55,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Trim and adjust hair length while maintaining your current cut, ideal for keeping your look always sharp and well-groomed.
                             </p>
                         </li>
 
@@ -76,7 +76,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Complete traditional shave that removes all facial hair, leaving skin smooth, soft and with a prolonged feeling of freshness.
                             </p>
                         </li>
                         <li className={styles['price-item']}>
@@ -89,7 +89,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Precise beard trimming and shaping, defining contours and maintaining the ideal length for a masculine and elegant look.
                             </p>
                         </li>
                         <li className={styles['price-item']}>
@@ -102,7 +102,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Smooth and refined shave with hot towels and premium products, providing maximum comfort and impeccable finish on the skin.
                             </p>
                         </li>
 
@@ -123,7 +123,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Brightening facial treatment that revitalizes the skin, reduces dark spots and promotes a more luminous and even appearance.
                             </p>
                         </li>
                         <li className={styles['price-item']}>
@@ -136,7 +136,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Deep skin cleansing that removes impurities, oil and dead cells, leaving your face fresh and revitalized.
                             </p>
                         </li>
                         <li className={styles['price-item']}>
@@ -149,7 +149,7 @@ export function Price() {
                             </div>
 
                             <p>
-                                Barber is a person whose occupation is mainly to cut dress groom style and shave men.
+                                Intensive treatment that brightens and tones facial skin, restoring natural glow and improving skin texture.
                             </p>
                         </li>
 
@@ -161,5 +161,7 @@ export function Price() {
             </div>
 
         </section>
+
+
     );
 }

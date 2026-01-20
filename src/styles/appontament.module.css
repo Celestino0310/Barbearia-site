@@ -32,6 +32,7 @@ select:focus {
   width: 110%;
   height: 100%;
   object-fit: cover;
+  filter: grayscale(40%);
 }
 /*  formulários css */
 .Formulario{

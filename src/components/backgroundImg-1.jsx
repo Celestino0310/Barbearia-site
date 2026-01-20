@@ -3,7 +3,7 @@ import styles from '../styles/backgroundImg-1.module.css';
 export function BackgroudImg1() {
 	return (
 
-		<section className={styles['sec-img']} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Images/barbearia.jpg)` }}>
+		<section className={styles['sec-img']} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Images/Back.jpg)` }}>
 			<div className={styles['section-img']}>
 				<div className={styles['division-img']}>
 					<h2>Making You Look Good <br></br>Is In Our Haritage</h2>

@@ -54,7 +54,7 @@ export function HorizonScroll() {
     <section
       className={styles.secImg}
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/Images/barbearia3.png)`
+        backgroundImage: `url(${process.env.PUBLIC_URL}/Images/Back-cadeira.png)`
       }}
     >
       <div

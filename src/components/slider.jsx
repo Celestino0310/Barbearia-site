@@ -8,9 +8,9 @@ export function Slider() {
     // corrige esses erros ai 
 
     const imagens = [
-        { src: './Images/about-2.jpg', alt: 'Our hair style enhances your smile' },
-        { src: './Images/about-1.jpg', alt: 'Being a barber is about taking care of your hair' },
-        { src: './Images/barbearia3.png', alt: 'Where mans want to look there very best' }
+        { src: './Images/about-1.jpg', alt: 'Our hair style enhances your smile' },
+        { src:  './Images/Barbearia-1.jpg', alt: 'Being a barber is about taking care of your hair' },
+        { src: './Images/Babearia-2.jpg', alt: 'Where mans want to look there very best' }
     ];
 
 
