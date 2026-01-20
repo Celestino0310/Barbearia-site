@@ -99,7 +99,7 @@
   cursor: pointer;
 }
 
-.btnS {
+.btn-slider {
   position: relative;
   top: 20px;
   right: 12px;
@@ -114,7 +114,7 @@
   z-index: 1;
 }
 
-.btnS::before {
+.btn-slider::before {
   content: '';
   inset: 0;
   background-color: #000;

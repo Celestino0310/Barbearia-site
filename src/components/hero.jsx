@@ -1,11 +1,28 @@
 import styles from '../styles/hero.module.css';
-
+import { useEffect } from 'react';
 export function Hero () {
+	   useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
     return ( 
 
 
 
-			<section className={styles.hero}>
+			<section id="hero" className={styles.hero + ' animate-on-scroll fade-in'}>
 				<div className={styles['hero-content']}>
 					<h3>Trendy Salon & Spa </h3>
 					<h2> Our Services </h2>

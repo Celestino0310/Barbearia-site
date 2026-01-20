@@ -34,13 +34,13 @@ export function Header() {
 					<ul className={styles.options}>
 						<li><a href="#home">HOME</a></li>
 						<li><a href="#service">ABOUT</a></li>
-						<li><a href="#home">SERVICES</a></li>
-						<li><a href="#service">PAGES</a></li>
-						<li><a href="#service">BLOG</a></li>
-						<li><a href="#home">CONTACT</a></li>
+						<li><a href="#hero">SERVICES</a></li>
+						<li><a href="#home">PAGES</a></li>
+						<li><a href="#blog">BLOG</a></li>
+						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 					<div className={styles['header-btn']}>
-						<a href='#Appontament'>MAKE APPOINTMENT</a>
+						<a href="#appontament">MAKE APPOINTMENT</a>
 					</div>
 				</nav>
 			</div>

@@ -3,7 +3,7 @@ import styles from '../styles/widget.module.css';
 export function Widget() {
     return( 
         
-			<section className={styles['section-widget']}>
+			<section id='contact' className={styles['section-widget']}>
 				<div className={styles['Div-container']}>
 
 					{/* BLOCO 1 — Logo + texto + redes */}

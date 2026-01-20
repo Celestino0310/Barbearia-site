@@ -1,14 +1,14 @@
 /* Background Image Section CSS */
-.secImg {
+.sec-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
-.sectionImg {
+.section-img {
   display: flex;
   height: 30rem;
   align-items: center;
@@ -16,7 +16,7 @@
   text-shadow: #000;
 }
 
-.divisionImg {
+.division-img {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +24,31 @@
   width: 70%;
 }
 
-.divisionImg h2 {
+.division-img h2 {
   font-family: 'Prata', serif;
   font-size: 42px;
   color: #FFFFFF;
 }
 
-.divisionImg p {
+.division-img p {
   font-size: 16px;
   font-family: 'Lato', serif;
   color: #FFFFFF;
   font-weight: 700;
+}
+
+.btn-s {
+  position: relative;
+  top: 20px;
+  right: 12px;
+  background-color: #9D8977;
+  max-width: 200px;
+  color: white;
+  margin: 10px ;
+  padding: 10px 5px;
+  cursor:pointer;
+  border-radius: 1px;
+  overflow: hidden;
+  z-index: 1;
+ 
 }

@@ -42,11 +42,11 @@ export function HorizonScroll() {
 
   // Três textos diferentes para o carrossel
   const textos = [
-    "Texto 1: Este é o primeiro texto do carrossel.",
-    "Texto 2: Aqui temos o segundo texto, diferente do primeiro.",
-    "Texto 3: E este é o terceiro texto, completando o ciclo."
+    "Gabriel Celestino Developer Front-End.",
+    "Daniel Figma designer UX/UI.",
+    "Gustavo Back-End Developer.",
   ];
-
+ 
   // Duplicamos os textos para garantir o loop infinito
   const textosCompletos = [...textos, ...textos, ...textos];
 
@@ -67,8 +67,10 @@ export function HorizonScroll() {
       >
         {textosCompletos.map((texto, i) => (
           <div key={i} className={styles.slide}>
-            <p>{texto}</p>
-          </div>
+            <p> "There are design companies, and then there are user experience design interface design professional. By far one of the worlds best known brands."</p>
+          
+            <h3>{texto}</h3>
+            </div>
         ))}
       </div>
     </section>

@@ -12,7 +12,7 @@ export function Price() {
                 </div>
             </div>
 
-            <div className={styles['price-content']}>
+            <div className={styles['price-content']+' animate-on-scroll fade-in'}>
 
                 <div className={styles['price-text']}>
 

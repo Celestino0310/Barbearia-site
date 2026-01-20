@@ -23,7 +23,7 @@
 
 .slide {
   min-width: 100%;
-  padding: 0 10vw;
+  padding: 0 9vw;
   text-align: center;
   color: #fff;
   user-select: none;
@@ -41,4 +41,14 @@
   margin-top: 20px;
   font-size: 1rem;
   opacity: 0.8;
+}
+.slide h3 {
+  font-family: "Lato", serif;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #fff;
+}
+.slide h3:hover {
+  color: #ffcc00;
+  transition: 0.3s;
 }

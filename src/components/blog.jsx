@@ -1,16 +1,16 @@
 import styles from '../styles/blog.module.css';
 
-export function Blog () {
-    return ( 
-			<section className={styles['Blog-section']}>
-				<div className={styles['Blog']}>
-					<div className={styles['Blog-title']}>
-						<h3> From Blog</h3>
-						<h2>A Good Newspaper Is A<br></br>
-							Nation Talking To Itself </h2>
-					</div>
-					<div className={styles['Blog-container']}>
-
+export function Blog() {
+    return (
+        <section id="blog" className={styles['Blog-section'] + ' animate-on-scroll fade-in'}>
+            <div className={styles['Blog']}>
+                <div className={styles['Blog-title']}>
+                    <h3> From Blog</h3>
+                    <h2>A Good Newspaper Is A<br></br>
+                        Nation Talking To Itself </h2>
+                </div>
+                <div className={styles['Blog-container']}>
+                    <li className="animate-on-scroll fade-in delay-1">
                         <div className={styles['Blog-item']}>
 
                             <img
@@ -26,9 +26,12 @@ export function Blog () {
                                 <p>
                                     Building first evolved out dynamics between needs means available building materials attendant skills.
                                 </p>
-                                 <a className={styles.specialLink} href="#blog"> read more </a>
+                                <a className={styles.specialLink} href="#blog"> read more </a>
                             </div>
                         </div>
+                    </li>
+
+                    <li className="animate-on-scroll fade-in delay-2">
                         <div className={styles['Blog-item']}>
 
                             <img
@@ -44,9 +47,11 @@ export function Blog () {
                                 <p>
                                     Building first evolved out dynamics between needs means available building materials attendant skills.
                                 </p>
-                               <a className={styles.specialLink} href="#blog"> read more </a>
+                                <a className={styles.specialLink} href="#blog"> read more </a>
                             </div>
                         </div>
+                    </li>
+                    <li className="animate-on-scroll fade-in delay-3">
                         <div className={styles['Blog-item']}>
 
                             <img
@@ -62,11 +67,12 @@ export function Blog () {
                                 <p>
                                     Building first evolved out dynamics between needs means available building materials attendant skills.
                                 </p>
-                               <a className={styles.specialLink} href="#blog"> read more </a>
+                                <a className={styles.specialLink} href="#blog"> read more </a>
                             </div>
                         </div>
-                    </div>
-				</div>
-			</section>
+                    </li>
+                </div>
+            </div>
+        </section>
     );
 }

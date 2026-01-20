@@ -18,7 +18,7 @@
   position: relative;
   left: 62px;
   min-width: none;
-  animation: animarTexto 2s ease-in-out forwards;
+ 
 }
 
 @keyframes animarTexto {
@@ -97,8 +97,8 @@
   transform: scaleX(1);
 }
 
-.bannerImage {
-  width: 40%;
+.bannerImages {
+  width: 50%;
   height: 20%;
   object-fit: cover;
 }
@@ -106,7 +106,7 @@
 .bannerImages img {
 
   width: 50%;
-  height: 75%;
+  height: auto;
   border-radius: 10px;
   object-fit: cover;
 
@@ -115,34 +115,34 @@
 .about01 {
   position: relative;
   width: 50%;
-  height: 50%;
-  left: 30px;
+  height: auto;
+  left: 0;
+  bottom: 3rem;
   z-index: 2;
-  border-radius: 2%;
-  margin-bottom: 30px;
-}
-
-.about02 {
-  position: relative;
-  width: 50%;
-  height: 65%;
-  top: 70px;
-  right: 60px;
-  z-index: 3;
   border-radius: 2%;
   margin-bottom: 30px;
   
 }
 
+.about02 {
+  position: relative;
+  width: 40%;
+  height: auto;
+  top: 8.9vw;
+  left: -2vw;
+  z-index: 3;
+  border-radius: 2%;
+  margin-bottom: 30px;
+}
+
 .about03 {
   position: relative;
   border-radius: 2%;
-  width: 50%;
-  height: 60%;
-  bottom: 40px;
-  left: 60px;
+  width: 40%;
+  height: auto;
+  bottom: 8rem;
+  left: 2vw;
   margin-bottom: 30px;
-
   z-index: 4;
 }
 
