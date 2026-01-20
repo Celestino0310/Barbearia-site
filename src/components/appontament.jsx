@@ -70,6 +70,7 @@ export  function Appontament() {
                         value={form.name}
                         onChange={MudaInfo}
                         placeholder="Name"
+                        required
                     />
 
                     <input
@@ -77,6 +78,7 @@ export  function Appontament() {
                         value={form.horario}
                         onChange={MudaInfo}
                         placeholder="Time to Appointment"
+                        required
                     />
 
                     <input
@@ -84,6 +86,7 @@ export  function Appontament() {
                         value={form.phone}
                         onChange={MudaInfo}
                         placeholder="Your Phone No"
+
                     />
 
                     <input
@@ -92,6 +95,7 @@ export  function Appontament() {
                         value={form.freeTime}
                         onChange={MudaInfo}
                         placeholder="Date and Time"
+                         required
                     />
 
                     <select

@@ -15,7 +15,7 @@ export function Price() {
             <div className={styles['price-content']+' animate-on-scroll fade-in'}>
 
                 <div className={styles['price-text']}>
-
+                    
                     <h3> Hair Styling </h3>
                     <ul>
 
