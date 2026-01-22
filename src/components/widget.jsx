@@ -17,23 +17,33 @@ export function Widget() {
 
 						<ul className={styles['ul-icons']}>
 							<li className={styles['icons']}>
-								<i className="fab fa-facebook"></i>
+								<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+									<i className="fab fa-facebook"></i>
+								</a>
 							</li>
 
 							<li className={styles['icons']}	>
-								<i className="fab fa-twitter"></i>
+								<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+									<i className="fab fa-twitter"></i>
+								</a>
 							</li>
 
 							<li className={styles['icons']}>
-								<i className="fab fa-google"></i>
+								<a href="https://github.com/Celestino0310" target="_blank" rel="noopener noreferrer">
+									<i className="fab fa-google"></i>
+								</a>
 							</li>
 
 							<li className={styles['icons']}>
-								<i className="fab fa-instagram"></i>
+								<a href="https://www.instagram.com/celes.tino0310/?next=%2F" target="_blank" rel="noopener noreferrer">
+									<i className="fab fa-instagram"></i>
+								</a>
 							</li>
 
 							<li className={styles['icons']}>
-								<i className="fab fa-linkedin"></i>
+								<a href="https://www.linkedin.com/in/devgabrielcelestino/" target="_blank" rel="noopener noreferrer">
+									<i className="fab fa-linkedin"></i>
+								</a>
 							</li>
 						</ul>
 					</div>

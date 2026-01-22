@@ -1,5 +1,6 @@
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
+
 // Componentes
 import { Header } from './components/header.jsx';
 import { Slider } from './components/slider.jsx';
@@ -16,8 +17,24 @@ import { Scroll } from './components/scroll.jsx';
 import { Widget } from './components/widget.jsx';
 import { Footer } from './components/footer.jsx';
 import { Botão } from './components/botão.jsx';
+import { Loading } from './components/loading.jsx';
+import styles from './styles/loading.module.css';
 
 function App() {
+   // loading
+   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // 3 segundos de delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
+
+
    useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -36,12 +53,16 @@ function App() {
         return () => observer.disconnect();
     }, []);
   return (
-    <div>
-      <Header />
       
+    <div className={styles.App}>
+       {isLoading ? <Loading /> : (
+        <>
+        
+      <Header />
+     
        <Slider />
        <Botão  />
-	      <Banner />
+	    <Banner />
         <Hero />
         <Appontament />
         <Service />
@@ -53,7 +74,8 @@ function App() {
         <Scroll />
         <Widget />
         <Footer />
-   
+       </>
+      )}
     </div>
   );
 }

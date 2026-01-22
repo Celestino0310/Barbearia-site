@@ -31,7 +31,12 @@
   justify-content: flex-start;
   gap:13px;
 }
-.icons{
+.icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icons i{
   cursor: pointer;
 }
 
