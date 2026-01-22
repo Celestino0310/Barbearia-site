@@ -19,11 +19,11 @@ export function Loading() {
     return (
         <div className={styles.load}>
             <div className={styles.loading}>
-                <span className={styles.circulo}></span><span className={styles.circulo2}></span>
+                <div className={styles.container}>
+                    <span className={styles.circulo}></span>
+                    <span className={styles.circulo2}></span>
+                </div>
             </div>
-            
-        </div >
+        </div>
     );
-
-
 }

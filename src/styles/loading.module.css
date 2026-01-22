@@ -1,66 +1,63 @@
-.load{
-    background-color:  #FCF9F5;
+.load {
+    background-color: #FCF9F5;
 }
 
-.loading{
-    margin:0;
+.loading {
+    margin: 0;
     padding: 0;
-
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100svh;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
 }
-.circulo{
-    display: block ;
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo {
+    display: block;
     background-color: transparent;
-    color: black;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 12px solid  #9e8a78;
-    border-right:12px solid transparent;
-    padding: 4rem;
-    animation: RotateLoad 0.9s ease infinite;
+    border: 12px solid #9e8a78;
+    border-right: 12px solid transparent;
+    animation: RotateLoad 0.9s linear infinite;
 }
-.circulo2{
+
+.circulo2 {
     position: absolute;
-    top: calc(50% - 34px); /* 34px = metade do tamanho total */
-    left: calc(50% - 34px);
+    top: 50%;
+    left: 50%; /*só assim pra essa bomba centralizar*/
     background-color: transparent;
-    color: black;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     border: 4px solid #9e8a78;
     border-right: 4px solid transparent;
-    padding: 2rem;
-    animation: RotaLoad 0.9s ease infinite;
+    animation: RotaLoad 0.9s linear infinite;
 }
 
-
-
 @keyframes RotateLoad {
-    0%{
-        
-     transform: rotate(0deg);
-        
+    0% {
+        transform: rotate(0deg);
     }
-    100%{
-       transform: rotate(360deg);
+    100% {
+        transform: rotate(360deg);
     }
 }
 
 @keyframes RotaLoad {
-    0%{
-        
-     transform: rotate(0deg);
-        
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
     }
-    100%{
-       transform: rotate(-360deg);
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
     }
 }
-
