@@ -1,6 +1,6 @@
 # 💈 Barber Shop Website — React
 
-![Barber Shop Banner](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
+
 
 Um **site institucional de barbearia** desenvolvido em **React**, focado em organização de código, escalabilidade e boas práticas de front-end moderno. Este projeto marca meu **primeiro contato prático com React** e foi essencial para consolidar conceitos como **JSX**, **componentização** e **estruturação de projetos reais**.
 
@@ -51,15 +51,13 @@ Essa separação facilita:
 
 ## 🖼️ Demonstração
 
-### Interface e Experiência
-
-![UI Demo](https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif)
+#gravar isso ae depois antes de soltar para o publico
 
 ### Componentização em Ação
 
 ![Components](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
 
-*(GIFs ilustrativos — podem ser substituídos por gravações reais do projeto)*
+
 
 ---
 
@@ -78,16 +76,17 @@ Essa separação facilita:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio
+git clone https://github.com/Celestino0310/Barbearia-site)
 
-# Entre na pasta do projeto
+# Entre na pasta do projeto onde voce clonou
 cd seu-repositorio
 
-# Instale as dependências
+# Instale as dependências caso nao tenha
 npm install
 
 # Rode o projeto
 npm run dev
+# ou npm start
 ```
 
 ---
@@ -96,9 +95,9 @@ npm run dev
 
 O projeto está hospedado no **Netlify**:
 
-🔗 **[https://seu-projeto-barbearia.netlify.app](https://seu-projeto-barbearia.netlify.app)**
+🔗 **[https://barber-rp.netlify.app](https://barber-rp.netlify.app)**
 
-> Substitua a URL acima pela do seu deploy real.
+
 
 ---
 
