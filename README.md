@@ -49,17 +49,6 @@ Essa separação facilita:
 
 ---
 
-## 🖼️ Demonstração
-
-#gravar isso ae depois antes de soltar para o publico
-
-### Componentização em Ação
-
-![Components](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
-
-
-
----
 
 ## 🛠️ Tecnologias Utilizadas
 
